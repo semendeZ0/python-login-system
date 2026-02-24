@@ -140,7 +140,7 @@ while n == 0:
         print('PROCESSANDO...')
         sleep(2)
         print('\033[53m-\033[m' * 10)    
-        if login_usuario == usuario[0] and login_senha == senha[0]:
+        if login_usuario in usuario and login_senha in senha:
             while True:        
                 print('Seja bem-vindo de volta \033[36m@{}\033[m !'.format(usuario[0]))
                 print('Preparei alguns joguinhos para você se divertir aqui! Confira:')
@@ -273,15 +273,3 @@ while n == 0:
             sleep(2)
 print('ENCERRANDO O PROGRAMA...')
 sleep(2)
-
-
-
-
-
-
-
-
-
-
-
-
